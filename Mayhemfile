@@ -1,0 +1,6 @@
+project: rnshah9/ortho4xp
+target: ortho4xp
+
+cmds:
+  - cmd: /repo/Utils/triangle /test
+    filepath: /test.node
