@@ -1,5 +1,5 @@
 project: rnshah9/ortho4xp
-target: ortho4xp
+target: triangle
 
 cmds:
   - cmd: /repo/Utils/triangle /test
