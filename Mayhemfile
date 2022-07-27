@@ -2,5 +2,4 @@ project: ortho4xp
 target: triangle
 
 cmds:
-  - cmd: /repo/Utils/triangle /test
-    filepath: /test.node
+  - cmd: /triangle /test

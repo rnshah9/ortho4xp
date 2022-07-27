@@ -7,11 +7,5 @@ COPY . /repo
 WORKDIR /repo/Utils
 RUN gcc triangle.c -lm
 
-RUN mkdir -p /deps
-RUN ldd /repo/Utils/triangle | tr -s '[:blank:]' '\n' | grep '^/' | xargs -I % sh -c 'cp % /deps;'
-
 FROM ubuntu:20.04 as package
-
-COPY --from=builder /deps /deps
-COPY --from=builder /repo/Utils/triangle /repo/Utils/triangle
-ENV LD_LIBRARY_PATH=/deps
+COPY --from=builder /repo/Utils/triangle /
