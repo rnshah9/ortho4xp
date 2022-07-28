@@ -3,3 +3,4 @@ target: triangle
 
 cmds:
   - cmd: /triangle /test
+    filepath: /test.node
